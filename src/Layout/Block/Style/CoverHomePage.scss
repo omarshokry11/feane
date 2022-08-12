@@ -1,0 +1,58 @@
+@import "../../../Style/__variable.scss";
+
+.main-cover-page-container
+{
+    background-image: url("./img/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 845px;
+    width: 100%;
+    color: $secondColor;
+    position: relative;
+    .cover-details
+    {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -35%);
+        @media (max-width: 700px) {
+            left: 15%;
+            top: 25%;
+            transform: translate(-10%, -25%);
+        }
+        h1{
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-family: cursive;
+            @media (max-width: 700px) {
+                font-size: 25px;
+            }
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            width: 54%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        button{
+            color: $secondColor;
+            background-color: $mainColor;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 45px;
+            transition: all .3s;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 10px;
+            &:hover{
+                background-color: rgba(255, 190, 51, .85);
+            }
+        }
+    }
+
+}

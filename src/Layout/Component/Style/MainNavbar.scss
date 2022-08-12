@@ -1,0 +1,89 @@
+@import "../../../Style/__variable";
+
+.main-navbar-container
+{
+    position: relative;
+    background-image: url("./img/cover.jpg");
+    background-size: unset;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: $secondColor;
+    padding: 20px 0;
+    .logo-name{
+        font-size: 30px;
+        font-weight: normal;
+        font-family: cursive;
+    }
+    ul
+    {
+        list-style: none;
+        li
+        {
+            display: inline-block;
+            margin-top: 10px;
+            @media (max-width: 768px) {
+                display: block;
+            }
+            a{
+                font-size: 17px;
+                color: $secondColor;
+                text-decoration: none;
+                transition: all 0.3s;
+                padding: 5px 15px;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+            .active{
+                color: $mainColor;
+            }
+        }
+    }
+    img{
+        margin: 0 8px;
+        cursor: pointer;
+        background-color: #ffbe33;
+        border-radius: 50%;
+        line-height: 25px;
+        height: 25px;
+        width: 25px;
+        padding: 5px;
+        display: inline-block;
+        text-align: center;
+    }
+    button{
+        color: $secondColor;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 35px;
+        transition: all .3s;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 8px;
+        &:hover{
+            background-color: rgba(255, 190, 51, .85);
+        }
+    }
+    .dropdown-items
+    {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        div{
+            background-color: #FFFFFF;
+            margin: 5px 0;
+            width: 30px;
+            height: 4px;
+            border-radius: 5px;
+        }
+    }
+    .dropdown-item{
+        position: relative;
+        background-image: url("./img/cover.jpg");
+        background-size: unset;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}

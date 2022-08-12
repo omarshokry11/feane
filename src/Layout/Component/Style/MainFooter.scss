@@ -1,0 +1,22 @@
+@import "../../../Style/__variable.scss";
+
+.main-footer-container
+{
+    padding: 45px 0;
+    background-color: $thirdColor;
+    color: $secondColor;
+    h2{
+        font-size: 28px;
+        font-weight: 600;
+        font-family: cursive;
+        margin-bottom: 20px;
+    }
+    p{
+        margin: 5px 0;
+        font-size: 17px;
+        color: #dbdbdb;
+    }
+    .inner-footer{
+        margin-top: 25px;
+    }
+}

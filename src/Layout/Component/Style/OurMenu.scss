@@ -1,0 +1,106 @@
+@import "../../../Style/__variable.scss";
+
+.main-our-menu-container
+{
+    padding: 90px 0;
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+        margin: 0;
+    }
+    .button-item
+    {
+        margin: 45px 0;
+        button{
+            margin: 0 10px;
+            padding: 7px 25px;
+            border-radius: 25px;
+            color: $thirdColor;
+            border: none;
+            background: none;
+            @media (max-width: 700px) {
+                margin: 0 5px;
+            }
+        }
+        .btn-active{
+            background-color: $thirdColor;
+            color: $secondColor;
+        }
+    }
+    .Product-item
+    {
+        background: linear-gradient(to bottom, #f1f2f3 25px, $thirdColor 25px);
+        border-radius: 15px;
+        width: 90%;
+        margin: 15px auto;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        &:hover .img-product img{
+            transform: scale(1.1);
+        }
+        .img-product{
+            background-color: #f1f2f3;
+            text-align: center;
+            align-items: center;
+            height: 215px;
+            border-radius: 0 0 0 45px;
+            padding: 25px;
+            img{
+                max-width: 100%;
+                max-height: 145px;
+                transition: all .4s;
+            }
+        }
+        .details-product
+        {
+            color: $secondColor;
+            padding: 25px;
+            position: relative;
+            h5{
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin: 0;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+            .product-price{
+                font-size: 1rem;
+            }
+            .icon-cart
+            {
+                position: absolute;
+                right: 25px;
+                bottom: 25px;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: $mainColor;
+                border-radius: 50%;
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .view-more{
+        color: $secondColor;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 55px;
+        transition: all .3s;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        &:hover{
+            background-color: rgba(255, 190, 51, .85);
+        }
+    }
+}
